@@ -1,0 +1,42 @@
+{
+  "name": "projetodescricoesdelpielectron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "build": {
+    "appId": "com.descricoesdelpi.id",
+    "productName": "DescricoesDelpi",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "src/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "rebuild": "electron-rebuild",
+    "postinstall": "electron-rebuild",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runscript": "electron ./src/scripts/run-script.js",
+    "create-db":"electron ./src/db/db.js",
+    "seed-db":"electron ./src/db/seed.js",
+    "import-excel": "electron ./src/base/importExcel.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^36.2.1",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "xlsx": "^0.18.5"
+  }
+}

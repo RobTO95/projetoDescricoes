@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';"
+        />
+        <title>Descrições Delpi</title>
+        <link rel="stylesheet" href="./view/styles/style.css" />
+    </head>
+    <body>
+        <div id="window-controls">
+            <div id="min-btn" class="window-controls-btn">−</div>
+            <div id="max-btn" class="window-controls-btn">□</div>
+            <div id="close-btn" class="window-controls-btn">×</div>
+        </div>
+        <nav>
+            <div>
+                <a href="#/home">Home</a>
+            </div>
+            <div>
+                <a href="#/produtos">Produtos</a>
+
+                <a href="#/config">Configurações</a>
+
+                <a href="#/outras">Outras</a>
+            </div>
+        </nav>
+        <main id="app">
+            <!-- Conteudo principal -->
+        </main>
+        <script src="./router.js"></script>
+        <script src="./renderer.js"></script>
+    </body>
+</html>

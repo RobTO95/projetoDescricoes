@@ -1,0 +1,5 @@
+/node_modules
+/src/base/dados.xlsx
+/src/db/data.db
+/electron.txt
+/sqlite.txt
